@@ -1,39 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Solana Monkey Business</title>
-<style>
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  margin: 0;
-  padding: 0;
-}
-.container {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-.container img,
-.additional-img {
-  display: block;
-  margin: 20px auto;
-  max-width: 100%;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First HTML Page</title>
+    <!-- Include Eleven Twenty font from Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Eleven+Twenty&display=swap">
+    <style>
+        body {
+            background-color: #6bd6c2;
+            color: #ffffff; /* Text color set to white */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            font-family: 'Eleven Twenty', sans-serif; /* Use Eleven Twenty font */
+        }
+        header {
+            background-color: #50ccb4; /* Header background color */
+            color: #ffffff; /* Header text color */
+            padding: 10px 0; /* Add padding to header */
+            position: fixed; /* Fix header position */
+            top: 0; /* Place header at top */
+            width: 100%; /* Full width header */
+            text-align: center; /* Center align text */
+            z-index: 1000; /* Set z-index to bring it to the front */
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        main {
+            text-align: center; /* Center align content in main section */
+            margin-top: 100px; /* Add margin to push content below header */
+        }
+        .animated-name,
+        .animated-image,
+        .animated-text {
+            display: inline-block;
+            animation: bounce 1s infinite alternate; /* Animation effect */
+        }
+        @keyframes bounce {
+            from { transform: translateY(0); }
+            to { transform: translateY(-10px); }
+        }
+        .social-buttons {
+            margin-top: 20px; /* Add margin to separate from the description */
+        }
+        .white-button {
+            background-color: #ffffff;
+            color: #000000; /* Text color set to black */
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none; /* Remove underline from the button */
+            transition: background-color 0.3s ease; /* Smooth transition on hover */
+            margin-right: 10px; /* Add margin between buttons */
+        }
+        .white-button:hover {
+            background-color: #f0f0f0; /* Light gray color on hover */
+        }
+    </style>
 </head>
 <body>
-<div class="container">
-  <img src="https://i.postimg.cc/wjT418dN/IMG-20240410-215751.png" alt="Solana Monkey Business Image">
-</div>
-<img class="additional-img" src="https://i.postimg.cc/7Zwh79B0/IMG-20240410-215806.png" alt="Another Image">
-<img class="additional-img" src="https://i.postimg.cc/d3GQZZr5/IMG-20240410-215818.png" alt="Third Image">
-<img class="additional-img" src="https://i.postimg.cc/LX2FQQ13/IMG-20240410-215833.png" alt="Fourth Image">
-<img class="additional-img" src="https://i.postimg.cc/zB7ZswwZ/IMG-20240410-215850.png" alt="Last Image">
+    <header>
+        <h1 class="animated-name" id="name">ShitTrump</h1>
+        <nav>
+            <ul>
+                <!-- Home section removed -->
+                <!-- About section removed -->
+                <!-- Services section removed -->
+                <!-- Contact section removed -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img src="https://i.postimg.cc/cLHchF9T/45ffaeb08722204a3ba6098272e85018.png" alt="Image" class="center-image animated-image">
+        <div class="description animated-text">
+            <p>◻️◻️◻️</p>
+            <p>Buckle up, folks! Sh*t Trump Coin (STC) is crashing the crypto party with a big bang of humor and absurdity. Picture this: a digital token so hilarious, it could make a grumpy cat crack a smile!</p>
+            <p>STC isn't your average crypto token. No, sir! It's the brainchild of meme enthusiasts, pranksters, and all-around goofballs who believe that life is too short not to laugh at the absurdity of it all.</p>
+            <p>As an STC holder, you're not just part of a community; you're part of a meme revolution! Get ready for epic meme battles, where the wittiest come out on top. Want to show off your meme-making skills? STC's got your back, offering rewards that'll make you say, "Wait, this is real money?!"</p>
+            <p>But hey, it's not all laughs and giggles. We're serious about spreading joy too! STC donates a portion of its absurdly low transaction fees to charity because making the world a better place is no joke (well, maybe a little).</p>
+            <p>So, grab your memes, grab your STC, and let's turn the crypto world upside down, one laugh at a time!</p>
+            <p>◻️◻️◻️</p>
+        </div>
+        <div class="social-buttons animated-text">
+            <a href="https://twitter.com/S_hitTrump" class="white-button" target="_blank">Twitter</a>
+            <a href="https://telegram.org/" class="white-button" target="_blank">Telegram</a>
+            <a href="#" class="white-button">Pump</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+        window.onload = function() {
+            var nameElement = document.getElementById('name');
+            var imageElement = document.querySelector('.animated-image');
+            var textElements = document.querySelectorAll('.animated-text');
+            
+            nameElement.classList.add('animated-name');
+            imageElement.classList.add('animated-image');
+            textElements.forEach(function(element) {
+                element.classList.add('animated-text');
+            });
+        };
+    </script>
 </body>
 </html>
